@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QuizingFun.View.Page1"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="5" Padding="10" Orientation="Vertical">
+            <Label Text = "{Binding Question}"
+                   AutomationId="Question"
+                   Padding="25"
+                   FontAttributes="Bold"
+                   TextColor="Blue"
+                   FontSize="32"
+                   VerticalOptions="Center"
+                   />
+
+            <Button Text="{Binding Option_one}"
+                    AutomationId="OptionOne"
+                    Padding="10"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontAttributes="Bold"
+                    BackgroundColor="DarkCyan"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="Option1_Clicked"/>
+
+
+            <Button Text="{Binding Option_two}"
+                     AutomationId="OptionTwo"
+                    Padding="10"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontAttributes="Bold"
+                    BackgroundColor="DarkCyan"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="Option2_Clicked"
+                  />
+
+            <Button Text="{Binding Option_three}"
+                     AutomationId="OptionThree"
+                    Padding="10"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontAttributes="Bold"
+                    BackgroundColor="DarkCyan"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="Option3_Clicked"
+                    />
+
+            <Button Text="{Binding Option_four}"
+                     AutomationId="OptionFour"
+                    Padding="10"
+                    FontSize="25"
+                    WidthRequest="350"
+                    FontAttributes="Bold"
+                    BackgroundColor="DarkCyan"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="Option4_Clicked"
+                    />
+
+            <Grid  VerticalOptions="EndAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                    Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="*"/>
+                    <ColumnDefinition
+                        Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="SCORE: "
+                    HorizontalOptions="End"
+                    FontSize="28"
+                    TextColor="Fuchsia"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Label
+                    Text= "{Binding Score}"
+                    AutomationId="Score"
+                    HorizontalOptions="Start"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="DarkSlateBlue"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

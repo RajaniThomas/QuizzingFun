@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QuizingFun.MainPage">
+
+    <StackLayout Spacing="5" Padding="10" Orientation="Vertical">
+
+        <Image
+                Source="icon.png"
+                Aspect="AspectFit"
+                HeightRequest="300"/>
+
+        <Label Text="FUN QUIZZZ!"
+                   AutomationId="FunQuizLabel"
+                   FontSize="38"
+                   FontAttributes="Bold"
+                   TextColor = "DarkCyan"
+                   HorizontalOptions="CenterAndExpand"/>
+
+        <Label Text=" A fun way to test your General Knowledge. Choose the right answer and score as you go! Ready ?"
+                   Padding="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   TextColor ="DarkRed"
+                   HorizontalOptions="Center"/>
+
+        <Button Text="START QUIZ"
+                    AutomationId="StartButton"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="Aquamarine"
+                    BackgroundColor="DarkCyan"
+                    Clicked="Start_Button_Clicked"/>
+  
+    </StackLayout>
+
+</ContentPage>

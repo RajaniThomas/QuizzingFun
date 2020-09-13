@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QuizingFun.View.LastPage"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="5" Padding="10" Orientation="Vertical">
+
+            <Image
+                Source="icon.png"
+                Aspect="AspectFit"
+                HeightRequest="150"/>
+            
+            <Label Text="Quiz compeleted !"
+                   AutomationId="LastPageText"
+                   Padding="15"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor = "DarkCyan"
+                   HorizontalOptions="Center"
+                 />
+
+            <Label Text = "{Binding FinalResult}"
+                   AutomationId="FinalScore" 
+                   Padding="5"
+                 BackgroundColor="Crimson"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="32"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                  />
+
+            <Label Text = "{Binding HighestScore}"
+                   AutomationId="HighestScore"
+                   Padding="5"
+                 BackgroundColor="Crimson"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="32"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                  />
+
+            <Label Text = "{Binding ScoreMessage}"
+                   Padding="15"
+                   FontAttributes="Bold"
+                   TextColor="Blue"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   />
+
+                <Button
+                    Text="Play Again"
+                    AutomationId="PlayAgain_Button"
+                    WidthRequest="200"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="ReplayButtonClicked"/>
+
+                <Button
+                    Text= "Exit Fun Quizzz"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="ExitButtonClicked"/>
+
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

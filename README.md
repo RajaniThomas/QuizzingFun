@@ -9,5 +9,6 @@ If the user chooses the wrong option a message box pops up to indicate the corre
 until the given set of questions has been completed. The user scores points as he goes and will be given a final score based on his answers 
 after a fixed number of questions. If you have played this multiple times, it will give your a comparision of your highest score vs current score .
 
-Project Documentation : 
-https://drive.google.com/drive/folders/1qX94aq-cdKGlW7l7ONXnL6FKsKVukmFQ?usp=sharing
+
+User Documentation : https://drive.google.com/file/d/1U9xYq3P_GlUdC95_CWLay8R7XqrjufSv/view?usp=sharing
+Developer Documentation : https://drive.google.com/file/d/1mWZciM2fjhMAHRAYetuJ8iwnH0Ne_nq4/view?usp=sharing
